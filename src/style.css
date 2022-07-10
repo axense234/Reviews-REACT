@@ -1,0 +1,169 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+/* Colors */
+/* White,Yellow,Blue */
+
+@keyframes hover_animation {
+  50% {
+    background-color: yellow;
+    color: black;
+    border-color: black;
+  }
+  100% {
+    background-color: blue;
+  }
+}
+
+body {
+  background-color: yellowgreen;
+  font-family: "Arial Narrow Bold", sans-serif;
+}
+
+#root {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#title {
+  margin-top: 5rem;
+}
+
+hr {
+  width: 10rem;
+  height: 0.2rem;
+  background-color: yellow;
+  border-color: yellow;
+}
+
+section {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 5rem 4rem 0 4rem;
+  background-color: yellow;
+  border-radius: 1.3rem;
+  max-width: 50%;
+}
+
+.review-container {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#img-container {
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+}
+
+#photo {
+  width: 10rem;
+  height: 10rem;
+  margin-top: 2rem;
+  /* Image Border */
+  border-radius: 50%;
+  border-color: blue;
+  border-style: solid;
+
+  border-top-width: 0.8rem;
+  border-right-width: 1rem;
+  border-bottom: none;
+  border-left: none;
+
+  box-shadow: 1px 1px 15px 7px blue;
+  object-fit: cover;
+}
+
+#quote-id {
+  position: absolute;
+  width: 2rem;
+  height: 2rem;
+  border-radius: 50%;
+  background-color: yellowgreen;
+  padding: 0.5rem;
+  margin-top: 3rem;
+  transform: translateX(-7px);
+}
+
+#name {
+  margin: 1rem 0 0.5rem 0;
+  font-weight: 800;
+  font-size: 1.6rem;
+}
+
+#role {
+  margin-bottom: 2rem;
+  font-weight: 800;
+}
+
+#review-content {
+  margin: 0 2rem 1rem 2rem;
+  letter-spacing: 0.1rem;
+  font-size: 0.95rem;
+  font-weight: 800;
+  text-align: center;
+  transition: font-size 0.5s;
+}
+
+#button-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-top: 0.4rem;
+  margin-bottom: 1rem;
+  justify-content: space-evenly;
+}
+
+#chevron-left,
+#chevron-right {
+  border: 1px solid black;
+  border: none;
+  background-color: yellow;
+  transform: scale(1.5);
+}
+
+#chevron-left {
+  margin-right: 1.8rem;
+}
+
+#chevron-right {
+  margin-left: 1.8rem;
+}
+
+#surprise-me-btn {
+  background-color: blue;
+  color: white;
+  border-color: blue;
+  border-radius: 1rem;
+  width: 7rem;
+  height: 2.5rem;
+  text-align: center;
+  box-shadow: 1px 1px 9px black;
+  font-size: 0.8rem;
+  font-weight: 800;
+  margin-bottom: 2rem;
+}
+
+#surprise-me-btn:hover {
+  /* ANIMATION */
+  animation-name: hover_animation;
+  animation-duration: 1.7s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+
+@media screen and (max-width: 1000px) {
+  #review-content {
+    font-size: 0.75rem;
+  }
+  section {
+    min-width: 70%;
+  }
+}
