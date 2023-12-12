@@ -42,7 +42,7 @@ const Main = () => {
               )
             }
           >
-            <GrFormPrevious></GrFormPrevious>
+            <GrFormPrevious/>
           </button>
           <button type='button' onClick={() => randomReview()}>
             Surprise me
@@ -55,7 +55,7 @@ const Main = () => {
               )
             }
           >
-            <GrFormNext></GrFormNext>
+            <GrFormNext/>
           </button>
         </div>
       </section>

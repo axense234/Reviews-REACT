@@ -11,6 +11,8 @@ A simple React Project that focuses on the basics of react by handling data and 
 ### Dependencies
 
 - Check package.json for details.
+- Git
+- Docker(optional)
 
 ### Installing
 
@@ -20,9 +22,20 @@ git clone https://github.com/axense234/Reviews-REACT.git
 
 ### Executing program
 
+- **Using NPM**
+
 ```
 npm install
 npm start
+```
+
+- **Using Docker**
+
+```
+docker build -t reviews-react:0.3.0
+docker stop reviews-react-app
+docker rm reviews-react-app
+docker run -d -p 3000:3000 --name reviews-react-app reviews-react:0.3.0
 ```
 
 ## **Authors**
@@ -31,6 +44,8 @@ npm start
 
 ## **Version History**
 
+- 0.3
+  - Analyzed the code to gather to-do tasks, added Docker and changed a few styles.
 - 0.2
   - Simplified react logic and also improved how the website looks by a bit
   - See [commit change](https://github.com/axense234/Reviews-REACT/commits/master) or See [release history](https://github.com/axense234/Reviews-REACT/releases)
